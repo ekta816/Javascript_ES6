@@ -1,9 +1,11 @@
 function fibonacciGenerator (n) {
     var answer = [];
-    if(n===0){//first term only
+    if(n<=0)//n is not valid
+        return answer;
+    if(n===1){//first term only
         answer.push(0);
         }
-    else if(n===1){//first and second terms
+    else if(n===2){//first and second terms
         answer.push(0);
         answer.push(1);
         }
@@ -17,6 +19,7 @@ function fibonacciGenerator (n) {
     }
         
        return answer;
+    
 }
 
 fibonacciGenerator(10);
